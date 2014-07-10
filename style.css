@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 10, 2014, 1:58:23 PM
+    Author     : Satellite
+*/
+
+body{
+    background:#f2f2f2;
+}
+
+.container .navbar{
+padding-top:20px;
+}
+.container .social ul{
+    list-style: none;
+}
+.container .social ul li{
+    display: inline-block;
+    width: 37px;
+    height:37px;
+    text-align: center;
+    vertical-align: center;
+    border-radius:50%;
+    padding-top: 8px;
+    margin-right:10px
+        
+}
+.container .social ul li a{
+    padding:0px;
+    display: block;
+    width:100%;
+    height:100%;
+}
+.fb{
+    background:#3863aa;
+    
+}
+.tw{
+    background:#5cb7f1;
+}
+.container .social ul li a i{
+    color:#fff;
+}
+.banner{
+    width: 100%;
+    height: 404px;
+    background:url('img/banner.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment:initial; */
+    position: absolute;
+    left: 0px;
+    color:#fff;
+    
+    background-position-x: -97px;
+}
+.banner h1{
+    width: 600px;
+    margin: auto;
+    margin-top: 9%;
+    height:400px;
+}
+.container.chart{
+    
+    position: absolute;
+    top:600px;
+}
+.container.chart #chart_div{
+    width:856px;
+    height:500px;
+}
+.container.fbcmnts{
+    width:100%;
+    background:#fff;
+    position: absolute;
+    top:1140px;
+    left:0px;
+    padding-top: 60px;
+}

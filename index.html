@@ -1,44 +1,102 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
-<head>
-    <title>Gaza Under Attack 2014</title>
-    <meta name="description" content="63 Palestinians killed, over 500 injured in Gaza assault" />
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-        google.load("visualization", "1", { packages: ["corechart"] });
-        google.setOnLoadCallback(drawChart);
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-              ['Day', 'injured', 'killed'],
-              ['1st Day', 108, 21],
-              ['2nd Day', 250, 30],
-              ['3rd Day', 500, 63]
-            ]);
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("visualization", "1", {packages: ["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Day', 'injured', 'killed'],
+                    ['1st Day', 108, 21],
+                    ['2nd Day', 250, 30],
+                    ['3rd Day', 540, 81]
+                ]);
 
-            var options = {
-                title: '63 Palestinians killed, over 500 injured in Gaza assault'
-            };
+                var options = {
+                    title: '63 Palestinians killed, over 500 injured in Gaza assault'//,
+                            //backgroundColor: { fill: 'transparent' }
+                };
 
-            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
-        }
-    </script>
-</head>
-<body style="background: url(bg.jpg) no-repeat fixed;">
-    <div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=appidnumber&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
 
-    <div id="chart_div" style="width: 900px; height: 500px; margin: auto;"></div>
-    <div style="width:900px; margin: auto; margin-top:15px; padding-top: 15px;  background: white;">
-        <div class="fb-comments" style="margin: auto;display: block;width: 568px;" data-href="http://gazaunderattack.com/" data-numposts="5" data-colorscheme="light"></div>
-    </div>
-</body>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>
+
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-52694831-1', 'auto');
+            ga('send', 'pageview');
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=440161909399506&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="container center-block">
+            <div class="navbar">
+                <div class="navbar-brand">kasdlksa</div>
+                <div class="social navbar-right">
+                    <ul class="btn-group">
+                        <li class="tw">
+                            <a class="btn-lg " href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="fb">
+                            <a class="btn-lg "  href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container banner">
+                <h1 class="h1">63 Palestinians killed over 500 injured in Gaza assault </h1>                
+            </div>
+            <div class="container chart">
+                <div id="chart_div" class="center-block"></div>
+            </div>
+            <div class="container fbcmnts">
+                <div class="comments">
+                    <div class="fb-comments" style="margin: auto;display: block;width: 568px;" data-href="http://gazaware.dotwasim.com/" data-numposts="5" data-colorscheme="light"></div>
+                </div>
+            </div>
+         
+        </div>
+        <footer>
+            dsadsadsa
+        </footer>
+    </body>
 </html>
