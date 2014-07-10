@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Gaza Under Attack 2014</title>
+    <meta name="description" content="63 Palestinians killed, over 500 injured in Gaza assault" />
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Day', 'injured', 'killed'],
+              ['1st Day', 108, 21],
+              ['2nd Day', 250, 30],
+              ['3rd Day', 500, 63]
+            ]);
+
+            var options = {
+                title: '63 Palestinians killed, over 500 injured in Gaza assault'
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body style="background: url(bg.jpg) no-repeat fixed;">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=appidnumber&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div id="chart_div" style="width: 900px; height: 500px; margin: auto;"></div>
+    <div style="width:900px; margin: auto; margin-top:15px; padding-top: 15px;  background: white;">
+        <div class="fb-comments" style="margin: auto;display: block;width: 568px;" data-href="http://gazaware.dotwasim.com/index.html" data-numposts="5" data-colorscheme="light"></div>
+    </div>
+</body>
+</html>
